@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.js"></script>
+  <script src="https://kit.fontawesome.com/49042efa96.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="upload-save">
+    <label class="btn" for="file-upload"><i class="fa-solid fa-upload"></i></label>
+    <input type="file" id="file-upload" accept=".json">
+    <i class="fa-solid fa-download" id="file-save"></i>
+  </div>
+
+  <div class="edit-cont">
+    <label for="new-date">Date</label>
+    <input type="date" id="new-date">
+
+    <br>
+
+    <label for="new-hrs">Hours</label>
+    <input type="number" id="new-hrs">
+
+    <br>
+
+    <i class="fa-solid fa-floppy-disk" id="new-log"></i>
+    <i class="fa-solid fa-check" id="edit-log"></i>
+  </div>
+
+  <div class="stats">
+    <h2>Stats</h2>
+
+    <p>Hours: <span id="stats-hrs"></span></p>
+    <p>Tracker: <span id="stats-tracker"></span></p>
+  </div>
+
+  <div class="logs"></div>
+
+  <script src="constants.js"></script>
+  <script src="utils.js"></script>
+  <script src="stats.js"></script>
+  <script src="script.js"></script>
+  <script src="listeners.js"></script>
+</body>
+
+</html>
